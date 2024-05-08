@@ -1,0 +1,24 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Ryan Shea", email = "rshea781@gmail.com"},
+]
+dependencies = [
+    "python-dotenv>=1.0.1",
+    "polars>=0.20.24",
+    "ruff>=0.4.3",
+    "requests>=2.31.0",
+]
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[tool.ruff.lint]
+select = ["F", "E", "I", "W"]
+ignore = ["F401"]
+
+fixable = ["ALL"]
+unfixable = []
